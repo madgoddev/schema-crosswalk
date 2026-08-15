@@ -1,0 +1,60 @@
+{
+  "evidenceSchema": "schemacrosswalk/deployment-evidence/v6",
+  "networkAlias": "studionet",
+  "networkName": "Genlayer Studio Network",
+  "chainId": 61999,
+  "rpcUrl": "https://studio.genlayer.com/api",
+  "contractAddress": "0xB1bF7a001cA289539A88299c4EA13EF451588159",
+  "deploymentTransactionHash": "0x74d02a9a8e3cf557760a4333938ab3d7048b6737825b5841aff7c7eb70f23e84",
+  "deploymentLifecycleStatus": "FINALIZED",
+  "deploymentConsensusResult": "MAJORITY_AGREE",
+  "deploymentExecutionResult": "SUCCESS",
+  "contractSourceSha256": "8383D532E3C4CC142369630DA777BC64B5DF10BC1A6640DBCA5C343674B2E7B9",
+  "deployedSourceSha256": "8383D532E3C4CC142369630DA777BC64B5DF10BC1A6640DBCA5C343674B2E7B9",
+  "deployedSourceBytes": 43407,
+  "deployedSourceMatchesLocal": true,
+  "genvmDependency": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "schema": {
+    "publicMethodCount": 13,
+    "viewMethodCount": 12,
+    "writeMethodCount": 1,
+    "constructorParameterCount": 0,
+    "abiSha256": "17211F17BCA6C8403D71D30B7039AF4379B23A36CFBFAF98047C091E61C50953",
+    "deployedSchemaMatchesLocal": true
+  },
+  "protocol": {
+    "formatVersion": "schema-crosswalk/4",
+    "compilationPolicyVersion": "schema-crosswalk-exec-policy/6",
+    "modelAuthoredProse": false,
+    "validatorOutput": "CLOSED_VERDICT_AND_ISSUE_CODE_ONLY",
+    "verificationBasis": "Exact deployed source and local audited ABI; large get_protocol and derive_pair_identity reads trigger the known Studio gen_call RLP-size defect, while compact reads pass."
+  },
+  "smokeTest": {
+    "fixtureSource": "examples/source_schema.json",
+    "fixtureSourceFileSha256": "C2E2E92C6A3D8D14CAE9C2BE2495D176A62CAA3B1C28891B6129802ADFD1CC95",
+    "fixtureTarget": "examples/target_schema.json",
+    "fixtureTargetFileSha256": "C89A9FE3139C5E99973790DD3C5D4395F5E49C743F928241BC7E1B7EBC3B0E7C",
+    "sourceCanonicalSha256": "2216cd6d9a73157a9b81391244ed1ca160e0a0a3280bab059ff8a92f55418c40",
+    "targetCanonicalSha256": "ae7a5f4d3fd77c8d6f2fd096999223a2a420980896d6101fb961a69340d13918",
+    "pairId": "2a43203e9328212cbb8c1ea865f4859ac33a9726c941dcca4b7ff798ab428c73",
+    "transactionHash": "0xb11005e79830fa840a3723d7bcc1e77b2429c3c4cf97de923b0847ad455c4ae4",
+    "lifecycleStatus": "FINALIZED",
+    "consensusResult": "MAJORITY_AGREE",
+    "executionResult": "SUCCESS",
+    "crosswalkSha256": "bcf976602be267d0c423fd58b365e467bcdfd6a05daeb2a1d2dcf729ed5a7413",
+    "coverage": "PARTIAL",
+    "edgeCount": 4,
+    "unresolvedCount": 1,
+    "recordCountAfterRead": 1,
+    "readbackVerified": true,
+    "fingerprintGateMatrix": {
+      "exactLowercase": true,
+      "exactUppercase": true,
+      "wrongHash": false,
+      "unknownPair": false
+    }
+  },
+  "deploymentVerificationPassed": true,
+  "semanticWriteVerificationPassed": true,
+  "networkSemanticVerification": "VERIFIED"
+}

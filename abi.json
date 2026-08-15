@@ -1,0 +1,178 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "compile_pair": {
+      "params": [
+        [
+          "source_schema_json",
+          "string"
+        ],
+        [
+          "target_schema_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "derive_pair_identity": {
+      "params": [
+        [
+          "source_schema_json",
+          "string"
+        ],
+        [
+          "target_schema_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "exists": {
+      "params": [
+        [
+          "pair_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "bool"
+    },
+    "find_by_source": {
+      "params": [
+        [
+          "pair_id",
+          "string"
+        ],
+        [
+          "source_path",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "find_by_target": {
+      "params": [
+        [
+          "pair_id",
+          "string"
+        ],
+        [
+          "target_path",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_crosswalk": {
+      "params": [
+        [
+          "pair_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_metadata": {
+      "params": [
+        [
+          "pair_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_pair_id_at": {
+      "params": [
+        [
+          "index",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_protocol": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_record_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "get_source_schema": {
+      "params": [
+        [
+          "pair_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_target_schema": {
+      "params": [
+        [
+          "pair_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "matches_fingerprint": {
+      "params": [
+        [
+          "pair_id",
+          "string"
+        ],
+        [
+          "expected_crosswalk_hash",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "bool"
+    }
+  }
+}

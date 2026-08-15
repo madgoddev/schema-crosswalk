@@ -1,0 +1,118 @@
+{
+  "evidenceSchema": "schemacrosswalk/deployment-evidence/v4",
+  "networkAlias": "testnet-bradbury",
+  "networkName": "Genlayer Bradbury Testnet",
+  "chainId": 4221,
+  "rpcUrl": "https://rpc-bradbury.genlayer.com",
+  "explorerBaseUrl": "https://explorer-bradbury.genlayer.com",
+  "cliVersion": "0.39.2",
+  "deployerAddress": "0xf6977164ae9efe2c4eed79b1d9bbd38e2e6b4331",
+  "contractAddress": "0x18c951CD7fbe40776aaa805f6767150973A06de9",
+  "deploymentTransactionHash": "0x986408f1c11d0cfda3a831b0d7dcb266710aa17d96bc46fc030a91143f46416e",
+  "deployedAtUtc": "2026-08-12T16:52:46Z",
+  "deploymentLifecycleStatus": "FINALIZED",
+  "deploymentConsensusResult": "AGREE",
+  "deploymentExecutionResult": "FINISHED_WITH_RETURN",
+  "deploymentValidatorVotes": {
+    "agree": 5,
+    "disagree": 0,
+    "other": 0
+  },
+  "contractSourceSha256": "40AD05A4EACFF9E7509A7D7B8CC52BFB8E7E2EC85AB4AAA257A909105CCC1F9F",
+  "deployedSourceSha256": "40AD05A4EACFF9E7509A7D7B8CC52BFB8E7E2EC85AB4AAA257A909105CCC1F9F",
+  "deployedSourceBytes": 43542,
+  "deployedSourceMatchesLocal": true,
+  "genvmDependency": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "schema": {
+    "publicMethodCount": 13,
+    "viewMethodCount": 12,
+    "writeMethodCount": 1,
+    "constructorParameterCount": 0,
+    "abiSha256": "17211F17BCA6C8403D71D30B7039AF4379B23A36CFBFAF98047C091E61C50953",
+    "matchesFingerprintParameters": [
+      "pair_id",
+      "expected_crosswalk_hash"
+    ],
+    "verified": true
+  },
+  "protocolRead": {
+    "formatVersion": "schema-crosswalk/2",
+    "compilationPolicyVersion": "schema-crosswalk-exec-policy/4",
+    "pathGrammar": "RFC6901_JSON_POINTER_EXPLICIT_LEAVES",
+    "typedLiteralEncoding": "CANONICAL_JSON_TEXT",
+    "maximumCrosswalkCharacters": 64000,
+    "maximumEdges": 64,
+    "maximumSchemaPaths": 256,
+    "maximumSourcesPerEdge": 8,
+    "maximumTypedJsonCharacters": 512
+  },
+  "deploymentVerificationPassed": true,
+  "networkSemanticVerification": "UNAVAILABLE",
+  "semanticWriteVerificationPassed": false,
+  "writeSmoke": {
+    "releaseEligible": false,
+    "status": "UNAVAILABLE_AFTER_BOUNDED_ATTEMPTS",
+    "sourceFixture": "examples/source_schema.json",
+    "sourceFixtureFileSha256": "C2E2E92C6A3D8D14CAE9C2BE2495D176A62CAA3B1C28891B6129802ADFD1CC95",
+    "targetFixture": "examples/target_schema.json",
+    "targetFixtureFileSha256": "C89A9FE3139C5E99973790DD3C5D4395F5E49C743F928241BC7E1B7EBC3B0E7C",
+    "sourceCanonicalSha256": "2216cd6d9a73157a9b81391244ed1ca160e0a0a3280bab059ff8a92f55418c40",
+    "targetCanonicalSha256": "ae7a5f4d3fd77c8d6f2fd096999223a2a420980896d6101fb961a69340d13918",
+    "pairId": "f8357a26a8120daef527d0546844f8dad01c26bd2d6eff4dcbf85fbb236926d7",
+    "boundedAttemptCount": 2,
+    "zeroStateVerifiedBeforeSmoke": true,
+    "noFurtherRetryOrAppeal": true,
+    "recordCountAfterFinalizedAttempts": 0,
+    "pairExistsAfterFinalizedAttempts": false,
+    "latestFinalRecordCount": 0,
+    "latestFinalPairExists": false,
+    "latestNonfinalRecordCount": 0,
+    "latestNonfinalPairExists": false,
+    "zeroStateReadbackVerified": true,
+    "semanticStateReadbackVerified": false,
+    "attempts": [
+      {
+        "transactionHash": "0x5650df45add61f87d310fd5b9de218e5a7355abe6cdee4c881acec5b438e407a",
+        "submittedAtUtc": "2026-08-12T17:24:33.807Z",
+        "createdAtUtc": "2026-08-12T17:24:35Z",
+        "lifecycleStatus": "FINALIZED",
+        "consensusResult": "NO_MAJORITY",
+        "executionResult": "FINISHED_WITH_RETURN",
+        "validatorVotes": {
+          "agree": 1,
+          "disagree": 0,
+          "timeout": 2,
+          "deterministicViolation": 2
+        },
+        "stateApplied": false,
+        "reason": "The committee returned no majority after automatic leader rotations; the finalized contract remained in zero-record state."
+      },
+      {
+        "transactionHash": "0x7ca8fd002ebf60a1a153ac8515b6e2a8821ea9da960d660798484184aa15ed72",
+        "submittedAtUtc": "2026-08-12T17:58:44.509Z",
+        "createdAtUtc": "2026-08-12T17:58:46Z",
+        "lifecycleStatus": "FINALIZED",
+        "consensusResult": "DISAGREE",
+        "executionResult": "FINISHED_WITH_ERROR",
+        "validatorVotes": {
+          "agree": 0,
+          "disagree": 0,
+          "timeout": 0,
+          "deterministicViolation": 5
+        },
+        "stateApplied": false,
+        "reason": "The one authorized fresh-committee retry ended in five deterministic-violation votes and did not apply state."
+      }
+    ]
+  },
+  "fingerprintGateLiveMatrix": {
+    "executed": false,
+    "reason": "No Bradbury compile attempt stored the pair, so a true-case live matrix would be misleading. The exact compact gate matrix passed on StudioNet."
+  },
+  "runtimeDiagnosis": {
+    "classification": "BRADBURY_WRITE_SMOKE_UNAVAILABLE",
+    "sourceRepairJustified": false,
+    "summary": "Read-only traces place the failures at the nondeterministic runtime and committee boundary; they do not establish a reproducible policy-v4 contract-logic defect. The identical source and fixtures passed the StudioNet write smoke."
+  },
+  "verifiedAtUtc": "2026-08-12T18:36:31Z"
+}

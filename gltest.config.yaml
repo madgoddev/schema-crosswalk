@@ -1,0 +1,13 @@
+networks:
+  default: localnet
+  localnet:
+    url: http://127.0.0.1:4075/api
+    chain_type: localnet
+    default_wait_interval: 100
+    default_wait_retries: 100
+
+paths:
+  contracts: contracts/
+  artifacts: artifacts/
+
+environment: .env

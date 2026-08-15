@@ -1,0 +1,14 @@
+.venv/
+.pytest_cache/
+__pycache__/
+*.pyc
+.env
+.env.*
+artifacts/
+*.log
+deploy/*.compiled.js
+deployments/*.raw.json
+*.key
+*.pem
+*.p12
+*.keystore

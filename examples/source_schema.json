@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LegacyCustomer",
+  "type": "object",
+  "required": ["customer_id", "display_name", "tier"],
+  "properties": {
+    "customer_id": {
+      "type": "integer",
+      "description": "The same stable customer identifier represented by target field id; convert its base-10 integer representation to text."
+    },
+    "display_name": {
+      "type": "string",
+      "description": "The same customer-facing name represented by target field name."
+    },
+    "tier": {
+      "type": "string",
+      "description": "The same loyalty level represented by target field level, encoded B=bronze, S=silver, and G=gold.",
+      "enum": ["B", "S", "G"]
+    },
+    "signed_up": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "The same account-creation instant represented by target field createdAt."
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "edges": [
+    {
+      "source_paths": ["/customer_id"],
+      "target_path": "/id",
+      "conversion": "TO_STRING",
+      "lossiness": "LOSSLESS",
+      "null_handling": "REJECT",
+      "confidence": "HIGH",
+      "default_json": "",
+      "separator": "",
+      "value_map": []
+    },
+    {
+      "source_paths": ["/display_name"],
+      "target_path": "/name",
+      "conversion": "RENAME_ONLY",
+      "lossiness": "LOSSLESS",
+      "null_handling": "REJECT",
+      "confidence": "HIGH",
+      "default_json": "",
+      "separator": "",
+      "value_map": []
+    },
+    {
+      "source_paths": ["/tier"],
+      "target_path": "/level",
+      "conversion": "ENUM_TRANSLATION",
+      "lossiness": "LOSSLESS",
+      "null_handling": "REJECT",
+      "confidence": "HIGH",
+      "default_json": "",
+      "separator": "",
+      "value_map": [
+        {"source_json": "\"B\"", "target_json": "\"bronze\""},
+        {"source_json": "\"G\"", "target_json": "\"gold\""},
+        {"source_json": "\"S\"", "target_json": "\"silver\""}
+      ]
+    },
+    {
+      "source_paths": ["/signed_up"],
+      "target_path": "/createdAt",
+      "conversion": "RENAME_ONLY",
+      "lossiness": "LOSSLESS",
+      "null_handling": "PRESERVE",
+      "confidence": "HIGH",
+      "default_json": "",
+      "separator": "",
+      "value_map": []
+    }
+  ],
+  "unresolved": [
+    {
+      "side": "TARGET",
+      "path": "/region",
+      "issue": "MISSING_REQUIRED_INPUT"
+    }
+  ]
+}

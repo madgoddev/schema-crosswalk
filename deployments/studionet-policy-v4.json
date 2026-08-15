@@ -1,0 +1,107 @@
+{
+  "evidenceSchema": "schemacrosswalk/deployment-evidence/v4",
+  "networkAlias": "studionet",
+  "networkName": "Genlayer Studio Network",
+  "chainId": 61999,
+  "rpcUrl": "https://studio.genlayer.com/api",
+  "explorerBaseUrl": "https://genlayer-explorer.vercel.app",
+  "cliVersion": "0.39.2",
+  "deployerAddress": "0xf6977164ae9efe2c4eed79b1d9bbd38e2e6b4331",
+  "contractAddress": "0x2a9E3FCa1697B8C3c6430343bcfC0C67ed81fbd1",
+  "deploymentTransactionHash": "0xae0ccc9acd51d3030947869017f992b24cdd9444541345f462a73680ef5af7f0",
+  "deployedAtUtc": "2026-08-12T16:11:45Z",
+  "deploymentLifecycleStatus": "FINALIZED",
+  "deploymentConsensusResult": "MAJORITY_AGREE",
+  "deploymentExecutionResult": "SUCCESS",
+  "deploymentValidatorVotes": {
+    "agree": 3,
+    "disagree": 0,
+    "idle": 2
+  },
+  "contractSourceSha256": "40AD05A4EACFF9E7509A7D7B8CC52BFB8E7E2EC85AB4AAA257A909105CCC1F9F",
+  "deployedSourceSha256": "40AD05A4EACFF9E7509A7D7B8CC52BFB8E7E2EC85AB4AAA257A909105CCC1F9F",
+  "deployedSourceBytes": 43542,
+  "deployedSourceMatchesLocal": true,
+  "genvmDependency": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "schema": {
+    "publicMethodCount": 13,
+    "viewMethodCount": 12,
+    "writeMethodCount": 1,
+    "constructorParameterCount": 0,
+    "abiSha256": "17211F17BCA6C8403D71D30B7039AF4379B23A36CFBFAF98047C091E61C50953",
+    "matchesFingerprintParameters": [
+      "pair_id",
+      "expected_crosswalk_hash"
+    ],
+    "verified": true
+  },
+  "protocolRead": {
+    "formatVersion": "schema-crosswalk/2",
+    "compilationPolicyVersion": "schema-crosswalk-exec-policy/4",
+    "pathGrammar": "RFC6901_JSON_POINTER_EXPLICIT_LEAVES",
+    "typedLiteralEncoding": "CANONICAL_JSON_TEXT",
+    "maximumCrosswalkCharacters": 64000,
+    "maximumEdges": 64,
+    "maximumSchemaPaths": 256,
+    "maximumSourcesPerEdge": 8,
+    "maximumTypedJsonCharacters": 512
+  },
+  "smokeTest": {
+    "sourceFixture": "examples/source_schema.json",
+    "sourceFixtureFileSha256": "C2E2E92C6A3D8D14CAE9C2BE2495D176A62CAA3B1C28891B6129802ADFD1CC95",
+    "targetFixture": "examples/target_schema.json",
+    "targetFixtureFileSha256": "C89A9FE3139C5E99973790DD3C5D4395F5E49C743F928241BC7E1B7EBC3B0E7C",
+    "transactionHash": "0x7e10078376eeea9bf5b6ee4867f8afd5ed93ec561f2b6e41daa1a4a72a68d864",
+    "submittedAtUtc": "2026-08-12T16:45:29.846Z",
+    "lifecycleStatus": "FINALIZED",
+    "consensusResult": "MAJORITY_AGREE",
+    "executionResult": "SUCCESS",
+    "validatorVotes": {
+      "agree": 3,
+      "disagree": 2,
+      "idle": 0
+    },
+    "sourceCanonicalSha256": "2216cd6d9a73157a9b81391244ed1ca160e0a0a3280bab059ff8a92f55418c40",
+    "targetCanonicalSha256": "ae7a5f4d3fd77c8d6f2fd096999223a2a420980896d6101fb961a69340d13918",
+    "pairId": "f8357a26a8120daef527d0546844f8dad01c26bd2d6eff4dcbf85fbb236926d7",
+    "crosswalkSha256": "5a555c4e5cd3fe21f9d1150acb4e3040fc6f705c9697e9efcba8feb638cbbe83",
+    "crosswalkHashRecomputedOffChain": true,
+    "coverage": "PARTIAL",
+    "edgeCount": 4,
+    "unresolvedCount": 1,
+    "recordCountAfterRead": 1,
+    "readbackVerified": true
+  },
+  "fingerprintGateLiveMatrix": {
+    "exactLowercase": true,
+    "exactUppercase": true,
+    "wrong64CharacterString": false,
+    "shortStringQ": false,
+    "unknownPair": false,
+    "rlpErrorsForStringCases": 0,
+    "verifiedOnStudioGenvm": true
+  },
+  "liveReadLimitation": {
+    "fullFixtureDerivePairIdentityGenCallSkipped": true,
+    "reason": "Studio gen_call rejected the two large dynamic string arguments; the identical identity was recomputed off-chain and verified again from finalized stored state."
+  },
+  "diagnosticDeploymentsExcludedFromRelease": [
+    {
+      "policyVersion": "schema-crosswalk-exec-policy/4",
+      "contractAddress": "0xb27789b0F35A551321a53F4Fd8a191CC62CEA4b3",
+      "deploymentTransactionHash": "0x70b776d6ff9b8669b9c56f8245637cb89b6a6abe74b643b946c05b1cd2c70b8c",
+      "supersededReadableSourceSha256": "F03B9130581673B93155D676CF9F791CC1CD52ADF81ACE2A7DA643BC9A87CDD0",
+      "releaseEligible": false,
+      "reason": "Superseded readable deployment; the compact source is the byte-identical release artifact."
+    },
+    {
+      "policyVersion": "schema-crosswalk-exec-policy/3",
+      "contractAddress": "0x6972885Fcf1d91f67A2308Bf94118CE14d353339",
+      "deploymentTransactionHash": "0x0be672b67b133da2cc34edfcdb3b07c95440a57d160f56c6ba60d3b4d1b69c17",
+      "compileTransactionHash": "0xe1c152ef1ccb200f195475d8314948088085b12c9750ee6cd1d01070ebf2d834",
+      "releaseEligible": false,
+      "reason": "Superseded five-string fingerprint gate exposed a Studio GenVM dynamic-argument decoding failure."
+    }
+  ],
+  "verifiedAtUtc": "2026-08-12T16:49:00Z"
+}
